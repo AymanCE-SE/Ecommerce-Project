@@ -31,7 +31,7 @@ function displayCartItems(cartItems) {
 let logOut = document.querySelector(".logout");
 let welcome = document.querySelector(".welcomeName");
 if(currentUser){
-    welcome.innerHTML =`welcome, ${currentUser.userName} !`;
+    welcome.innerHTML =`welcome, ${currentUser.userName}`;
     document.querySelector(".loging-signup").style.display= "none";
 }else{
     logOut.style.display= "none"
@@ -57,6 +57,9 @@ async function sendOrder (orderData){
 
 
 
+
+
+
 async function sendOrder(order) {
     try {
         const response = await fetch('http://localhost:3000/orders', {
@@ -76,31 +79,48 @@ async function sendOrder(order) {
         console.error(`Error sending order ${order.id}:`, error);
     }
 }
-
-
 const savedCart = localStorage.getItem('storageCart');//text values
-const ordersArray = JSON.parse(savedCart);  //array
+const ordersArray = JSON.parse(savedCart);//array
+
+// Add current user's username to each order and send
+// ordersArray.forEach(order => {
+//     const orderWithCustomer = {
+//         ...order, // Spread the original order properties
+//         customer: currentUser.userName, 
+//     };
+
+//     sendOrder(orderWithCustomer); // Send the order with the added username
+// });
+    let numberOfOrders = ordersArray.length;
+// for (let i = 0; i < numberOfOrders; i++) {
+//     const order = ordersArray[i];
+//     const orderWithCustomer = { ...order, customer: currentUser.userName, };
+
+//     sendOrder(orderWithCustomer); // Call your function here
+    
+// }
+
+
+
+
+
+
+
+
 
 //initialize the orders
 document.querySelector(".checkout-btn").addEventListener('click',async ()=>{
     // const orders = {
     //     id: 
-    //     productId: order.id
+    //     productId:
     //     sellerId:
     //     customer: currentUser.userName,
     //     totalAmount:
     //     status: "pending",
     //     orderDate:  
     // }
-    //SweetAlert
-    Swal.fire({
-        title: "Your Order Done!",
-        icon: "success"
-      });
-
     sendOrder (orderData)
 })
-
 // order
 // "id": "5O",
 // "productId": "4P",
