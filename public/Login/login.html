@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- checkAuthority script -->
+    <script src="/javaScript/auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login_box">
+            <div class="header">
+                <img class="logo" src="../logo.jpg">
+                <h2>Login</h2>
+            </div>
+            <form id="loginForm">
+                <div class="form_group">
+                    <!-- <label>Email:</label> -->
+                    <input id="email" type="email" name="email" placeholder="Enter Your Email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form_group">
+                    <!-- <label>password:</label> -->
+                    <input id="passwd" type="password" name="password" placeholder="Enter Your Password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div>
+                    <button class="btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../../javaScript/login.js"></script>
+
+</body>
+</html>

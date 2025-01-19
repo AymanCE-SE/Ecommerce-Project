@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <script src="/javaScript/auth.js"></script>
+    
+    <script>
+        if (!checkAuthority(["seller","admin"])) {
+    alert("You are not allowed to access this page.");
+    window.location.href = "/public/login/login.html"; 
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="seller.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar_header">
+                <h2>AliPaPa Seller Control</h2>
+                <p>Manage Your Product and Orders</p>
+            </div>
+            <ul class="nav_menu">
+                <li class="nav_item active" data-section="dashboard">
+                    <i class="fas fa-chart-line"></i>
+                    My Dashboard Stats
+                </li>
+                <li class="nav_item " data-section="products">
+                    <i class="fas fa-box"></i>
+                My Products
+                </li>
+                <li class="nav_item " data-section="orders">
+                    <i class="fas fa-shopping-cart"></i>
+                    Orders
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content  -->
+        <div class="main_content">
+            <div class="header">
+                <div class="search_bar">
+                    <input type="text" placeholder="Search...">
+                    <input class="btn btn_primary" type="button" value="Search">
+                </div>
+                <div>
+                <button id="home" class="btn btn_primary" type="button" value="">
+                    <a id="home" href="../index.html" target="_self">HOME</a>
+                </button>
+                <button id="myProfile" class="btn btn_primary" type="button" value="">
+                    <a id="myProfileLink" href="/public/profile2/profile.html" target="_self">My Profile</a>
+                </button>
+                </div>
+                <div class="user_info">
+                    <span>Seller</span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+
+            <!-- Dashboard Section  -->
+            <section id="dashboard" class="section active"> 
+
+                <div class="stat_card">
+                    <h3>Total Products</h3>
+                    <div class="value" id="totalProducts">0</div>
+                </div>
+                <div class="stat_card">
+                    <h3>Active Orders</h3>
+                    <div class="value" id="totalOrders">0</div>
+                </div>
+                <div class="stat_card">
+                    <h3>Pending Shipments</h3>
+                    <div class="value" id="pending_Shipments">0</div>
+                </div>
+            </section>
+
+        <!-- product section  -->
+        <section id="products" class="section">
+            <div class="section_header">
+                <h2>product Managment</h2>
+                <button class="btn btn_primary">Add Product</button>
+
+            </div>
+            <table class="data_table" id="productsTable">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Orders Section  -->
+        <section id="orders" class="section">
+            <div class="section_header">
+                <h2>Order Managment</h2>
+            </div>
+            <table class="data_table" id="ordersTable">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Seller</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+</div> 
+    
+    <!-- Add Product Model -->
+    <div id="addProductModel" class="model">
+        <div class="model_content">
+            <div class="model_header">
+                <h2>Add New Product</h2>
+                <i class="fa-regular fa-circle-xmark" id="close"></i>
+            </div>
+            <form id="addProductForm"  action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="form_group">
+                    <label>Product Name</label>
+                    <input class="productName" type="text" name="name" required>
+                </div>
+                <div class="form_group">
+                    <label>Main Image</label>
+                    <input class="img" type="url" name="img"  required>
+                </div>
+                <div class="form_group">
+                    <label>Secondary Image</label>
+                    <input class="secondImage" type="url" name="img_hover" required >
+                </div>
+                <div class="form_group">
+                    <label>Status</label>
+                    <select name="status" required>
+                        <option value="pending">Pending</option>
+                    </select>
+                    <div class="form_group">
+                        <label>Product Price</label>
+                        <input class="productPrice" type="number" name="price" required>
+                    </div>
+                    <div class="form_group">
+                        <label>Product old price</label>
+                        <input class="productOldPrice" type="number" name="old_price" >
+                    </div>
+                    <div class="form_group">
+                        <label>Description</label>
+                        <input class="description" type="text" name="description" >
+                    </div>
+                    <input type="submit" class="btn btn_primary" value="Add Product">
+                </div>
+            </form>
+        </div>
+    </div>  
+
+        <!-- Edit product Model  -->
+        <div id="editProductModel" class="model">
+            <div class="model_content">
+                <div class="model_header">
+                    <h2>Edit Product</h2>
+                    <i class="fa-regular fa-circle-xmark" id="close"></i>
+                </div>
+                <form id="editProductForm" method="post">
+                    <div class="form_group">
+                        <label>Product Name</label>
+                        <input class="productName" type="text" name="name" required>
+                    </div>
+                    <div class="form_group">
+                        <label>Main Image</label>
+                        <input class="img" type="file" name="img"  >
+                    </div>
+                    <div class="form_group">
+                        <label>Secondary Image</label>
+                        <input class="secondImage" type="file" name="img_hover"  >
+                    </div>
+                    <div class="form_group">
+                        <label>Status</label>
+                        <select name="status" required>
+                            <option value="pending">Pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                        <div class="form_group">
+                            <label>Product Price</label>
+                            <input class="productPrice" type="number" name="price" required>
+                        </div>
+                        <div class="form_group">
+                            <label>Product old price</label>
+                            <input class="productOldPrice" type="number" name="old_price" >
+                        </div>
+                        <div class="form_group">
+                            <label>Description</label>
+                            <input class="description" type="text" name="description" >
+                        </div>
+                        <input type="submit" class="btn btn_primary" value="Add Product">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    <script src="../../javaScript/seller.js"></script>
+</body>
+</html>

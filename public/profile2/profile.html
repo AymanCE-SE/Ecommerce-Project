@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - AliPaPa</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- checkAuthority to get data and log out -->
+    <script src="/javaScript/auth.js"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="container">
+            <div class="profile-header">
+                <h2><i class="fa-solid fa-user"></i> My Profile</h2>
+                <button id="home" class="btn btn_primary" type="button" value="">
+                    <a class="btn" id="myProfileLink" href="/public/index.html" target="_self">home</a>
+                </button>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-sidebar">
+                    <div class="profile-picture">
+                        <img id="imagePic" src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-1170x780.jpg" alt="Profile Picture">
+                        <button class="edit-photo"><i class="fa-solid fa-camera"></i> Change Photo</button>
+                        <input class="profilePic" type="url" value="profilepic.jpg" placeholder="Add Image URL">
+                    </div>
+                    <div class="profile-menu">
+                        <ul>
+                            <li class="active"><a href="#"><i class="fa-solid fa-user"></i> Personal Info</a></li>
+                            <li><a href="#"><i class="fa-solid fa-box"></i> My Orders</a></li>
+                            <li><a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> Addresses</a></li>
+                            <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                            <li class="logout"><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="profile-details">
+                    <h3>Personal Information</h3>
+
+                        <div class="form-group">
+                            <p>Name:</p>
+                            <p id="userNameProfile">Anonymous</p>
+                        </div><br><br>
+                        <div class="form-group">
+                            <p>Email Address:</p>
+                            <p id="emailProfile">Anonymous@AliPaPa.com</p><br><br>
+                        </div>
+                        <div class="form-group">
+                            <p>role:</p>
+                            <p id="roleProfile">Anonymous</p><br><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" value="1990-01-01" class="profile-input">
+                        </div>
+                        <div class="profile-actions">
+                            <button type="submit" class="save-btn">Save Changes</button>
+                            <button type="button" class="cancel-btn">Cancel</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

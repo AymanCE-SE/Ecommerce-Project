@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliPaPa.eg:Products</title>
+    <!-- css Link -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="all_products.css">
+    <!-- icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- auth js -->
+    <script src="/javaScript/auth.js"></script>
+    
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+                <!-- container -->
+        <div class="container top-nav">
+                <a href="#" class="logolink"><img class="logo" src="logo.jpg" alt="logo"></a>
+                <!-- search form -->
+            <form action="" class="search-Form">
+                <input type="text" id="search-bar" placeholder="Search for products..." />
+                <!-- <input type="submit" value="search"> -->
+            </form>
+            <p class="welcomeName">welcome, Anonymous</p>
+
+            <!-- cart -->
+            <div class="cart_header">
+                <div class="icon_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+
+                <div class="total_price">
+                    <p>My Cart:</p>
+                    <p class="price_cart_Head">$0</p>
+                </div>
+            </div>
+        </div>
+        <div class="container nav">
+            <div class="links">
+            <ul>
+                <li ><a id="home" href="/public/index.html" target="_self">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li ><a id="My Profile" href="/public/profile2/profile.html">My Profile</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            </div>
+
+            <div class="loging-signup">
+                <a href="/public/Login/login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="/public/register/register.html">sign up<i class="fa-solid fa-user-plus"></i></a>
+            </div>
+            <a class="logout" href="/public/index.html">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </div>
+
+    <!-- cart  -->
+    <div class="cart">
+        <div class="top_cart">
+            <h3>My Cart <span>(0 Item in Cart)</span></h3>
+            <span class="close_cart"><i class="fa-solid fa-circle-xmark"></i></span>
+        </div>
+    <!-- cart items -->
+    <!-- item 1 -->
+        <div class="cart_items">
+            <div class="item_cart">
+
+            </div>
+    </div>
+
+<!-- Bottom cart -->
+        <div class="bottom_Cart">
+            <div class="total">
+                <p>Cart subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="/public/checkout/checkout.html" class="btn_cart">Proceed to checkout</a>
+                <input class="btn_cart" type="button" value="Shop more">
+            </div>
+        </div>
+    </div>
+
+    <div class="top_page">
+        <div class="container">
+            <div class="topic">
+            <h1>Shop Smarter, Live Better</h1>
+            <p>Find everything you need and transform your home into a smart, connected space.</p>
+        </div>
+        </div>
+    </div>
+
+
+    <section class="all_products">
+        <div class="container">
+            <div class="filter">
+                <h2>filter</h2>
+
+                <div class="filter_item">
+                    <h4>Categories</h4>
+                    <div class="content">
+
+                        <div class="item">
+                            <span>Phones</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Tablets</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Electronics</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>TV</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Fashion</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Watches</span>
+                            <input type="checkbox">
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="filter_item">
+                    <h4>Brand</h4>
+                    <div class="content">
+
+                        <div class="item">
+                            <span>Apple</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Samsung</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Intel</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Oppo</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Xiaomi</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span>Huawei</span>
+                            <input type="checkbox">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="filter_item">
+                    <h4>Color</h4>
+                    <div class="content">
+
+                        <div class="item">
+                            <span class="color" style="background-color: red;"></span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span class="color" style="background-color: black;"></span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span class="color" style="background-color: blue;"></span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span class="color" style="background-color: green;"></span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="item">
+                            <span class="color" style="background-color: gold;"></span>
+                            <input type="checkbox">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+
+            <div id="products_dev" class="products_dev"></div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About AliPaPa</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Center</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Payment Methods</h3>
+                <ul>
+                    <li><a href="#">Credit Cards</a></li>
+                    <li><a href="#">Debit Cards</a></li>
+                    <li><a href="#">Cash on Delivery</a></li>
+                    <li><a href="#">Bank Transfer</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Stay Connected</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 AliPaPa Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../javaScript/all_products.js"></script>
+    <!-- <script src="../javaScript/main.js"></script> -->
+    <!-- <script src="/javaScript/itemshome.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,549 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@AliPaPa.com",
+      "role": "admin",
+      "id": "1",
+      "status": "active",
+      "password": "admin123456"
+    },
+    {
+      "username": "Belal.seller",
+      "email": "seller@gmail.com",
+      "role": "seller",
+      "id": "2",
+      "status": "active",
+      "password": "seller123456"
+    },
+    {
+      "id": "3",
+      "username": "Ahmed.elsaid",
+      "email": "good_boy@yahoo.com",
+      "role": "customer",
+      "password": "123456",
+      "status": "active",
+      "createdAt": "2025-01-12T09:33:57.991Z",
+      "cartID": "25145"
+    },
+    {
+      "id": "4",
+      "username": "radwa.mousa",
+      "email": "radwa.mousa@hotmail.com",
+      "role": "seller",
+      "password": "123456",
+      "status": "active",
+      "createdAt": "2025-01-12T09:34:00.557Z"
+    },
+    {
+      "id": "5",
+      "username": "ayman.samir",
+      "email": "ayman_samir_ahmed@hotmail.com",
+      "role": "admin",
+      "status": "active",
+      "password": "ayman123456"
+    },
+    {
+      "id": "6",
+      "username": "Abdallah.Hassan",
+      "email": "Abdo@gmail.com",
+      "role": "customer",
+      "status": "active",
+      "password": "123456"
+    },
+    {
+      "id": "7",
+      "username": "mousa",
+      "email": "good_boy_20102003@yahoo.com",
+      "role": "customer",
+      "status": "deleted",
+      "password": "123456"
+    },
+    {
+      "id": "8",
+      "username": "good_boy@yahoo.com",
+      "email": "good_boy@yahoo.com",
+      "role": "customer",
+      "status": "deleted",
+      "password": "123456"
+    },
+    {
+      "id": "10",
+      "username": "marina",
+      "email": "marina_stuart@521.56.sharelane.com",
+      "role": "seller",
+      "password": "123456"
+    },
+    {
+      "id": "11",
+      "username": "Abdallah.Hassans",
+      "email": "Abbdo@gmail.com",
+      "role": "customer",
+      "status": "active",
+      "password": "123456",
+      "createdAt": "2025-01-13T05:32:43.221Z"
+    },
+    {
+      "username": "Soliman",
+      "email": "SolyGhost@gmail.com",
+      "role": "seller",
+      "status": "active",
+      "password": "123456",
+      "id": "12"
+    },
+    {
+      "username": "ibrahim25",
+      "email": "hemaaa22@gmail.com",
+      "role": "customer",
+      "id": "13",
+      "status": "deleted",
+      "password": "123456"
+    },
+    {
+      "username": "hamada33",
+      "email": "hamada33@hamada.com",
+      "role": "customer",
+      "id": "14",
+      "status": "active",
+      "password": "123456"
+    },
+    {
+      "username": "Mahmoud",
+      "email": "Mahmoud@gmail.com",
+      "role": "customer",
+      "status": "active",
+      "password": "123456",
+      "id": "15"
+    },
+    {
+      "id": "16",
+      "username": "noor",
+      "email": "noorEldin@gmail.com",
+      "role": "customer",
+      "password": "123456",
+      "createdAt": "2025-01-13T10:44:35.816Z"
+    },
+    {
+      "username": "Remas",
+      "email": "remas@gmail.com",
+      "role": "customer",
+      "status": "deleted",
+      "password": "123456",
+      "id": "17P"
+    },
+    {
+      "id": "17",
+      "username": "hussien",
+      "email": "hussien@gmail.com",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2025-01-13T17:57:46.347Z"
+    },
+    {
+      "id": "19",
+      "username": "ali",
+      "email": "ali@yahoo.com",
+      "role": "customer",
+      "status": "deleted",
+      "createdAt": "2025-01-13T17:59:38.061Z"
+    },
+    {
+      "id": "20",
+      "username": "asd",
+      "email": "asda@asd.ada",
+      "password": "123456",
+      "role": "customer",
+      "status": "deleted",
+      "createdAt": "2025-01-13T23:46:03.354Z"
+    },
+    {
+      "id": "21",
+      "username": "a",
+      "email": "s@s.dd",
+      "password": "22",
+      "role": "customer",
+      "status": "deleted",
+      "createdAt": "2025-01-14T00:53:18.855Z"
+    },
+    {
+      "id": "22",
+      "username": "hgjgh",
+      "email": "sfsdf@asfda.66",
+      "password": "ddfg",
+      "role": "customer",
+      "status": "deleted",
+      "createdAt": "2025-01-14T00:53:32.346Z"
+    },
+    {
+      "username": "abdelrahman",
+      "email": "abdo.mo@gmail.com",
+      "role": "admin",
+      "password": "ddfg",
+      "id": "23"
+    },
+    {
+      "username": "delete admin test",
+      "email": "admintest@alipapa.com",
+      "role": "customer",
+      "id": "24",
+      "status": "deleted"
+    },
+    {
+      "id": "24M.",
+      "username": "M.Abd-elhay",
+      "email": "m.abdelhay@gmail.com",
+      "role": "seller",
+      "status": "active",
+      "password": "123456",
+      "createdAt": "2025-01-16T15:41:32.771Z"
+    },
+    {
+      "id": "26ka",
+      "username": "karma",
+      "email": "karma@hotmail.com",
+      "role": "customer",
+      "status": "active",
+      "password": "123456",
+      "createdAt": "2025-01-16T16:32:20.003Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1P",
+      "sellerId": "2",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "description": "Latest iPhone with advanced features",
+      "price": 185,
+      "old_price": 225,
+      "categoryId": "sub1",
+      "stock": 50,
+      "img": "img/product/product1.jpg",
+      "img_hover": "img/product/product-1.jpg",
+      "status": "approved",
+      "ratings": {
+        "average": 4.5,
+        "count": 10
+      }
+    },
+    {
+      "id": "2P",
+      "sellerId": "2",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "description": "Powerful laptop for professionals",
+      "price": 100,
+      "old_price": 120,
+      "categoryId": "sub2",
+      "stock": 30,
+      "img": "img/product/product2.jpg",
+      "img_hover": "img/product/product-2.jpg",
+      "status": "approved",
+      "ratings": {
+        "average": 4.8,
+        "count": 15
+      }
+    },
+    {
+      "id": "3P",
+      "sellerId": "2",
+      "img": "img/product/product3.jpg",
+      "img_hover": "img/product/product-3.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 140,
+      "old_price": 200,
+      "status": "approved"
+    },
+    {
+      "id": "4P",
+      "sellerId": "10",
+      "img": "img/product/product4.jpg",
+      "img_hover": "img/product/product-4.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 90,
+      "old_price": 110,
+      "status": "approved"
+    },
+    {
+      "id": "5P",
+      "sellerId": "4",
+      "img": "img/product/product5.jpg",
+      "img_hover": "img/product/product-5.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 350,
+      "old_price": 420,
+      "status": "approved"
+    },
+    {
+      "id": "6P",
+      "sellerId": "10",
+      "img": "img/product/product6.jpg",
+      "img_hover": "img/product/product-6.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 115,
+      "old_price": 235,
+      "status": "approved"
+    },
+    {
+      "id": "7P",
+      "sellerId": "4",
+      "img": "img/product/product7.jpg",
+      "img_hover": "img/product/product-7.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 225,
+      "old_price": 280,
+      "status": "approved"
+    },
+    {
+      "id": "8P",
+      "sellerId": "2",
+      "img": "img/product/product8.jpg",
+      "img_hover": "img/product/product-8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 150,
+      "old_price": 200,
+      "status": "pending"
+    },
+    {
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "status": "pending",
+      "description": "Phone",
+      "price": 180,
+      "img": "img/product/product-9.jpg",
+      "img_hover": "img/product/product-9.jpg",
+      "id": "9P",
+      "sellerId": "2"
+    },
+    {
+      "id": "10P",
+      "sellerId": "2",
+      "img": "img/product/product-2.jpg",
+      "img_hover": "img/product/product2.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 300,
+      "status": "approved"
+    },
+    {
+      "id": "11P",
+      "sellerId": "2",
+      "img": "img/product/product-3.jpg",
+      "img_hover": "img/product/product3.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 250,
+      "status": "approved"
+    },
+    {
+      "id": "12P",
+      "sellerId": "2",
+      "img": "img/product/product-4.jpg",
+      "img_hover": "img/product/product4.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 120,
+      "status": "approved"
+    },
+    {
+      "id": "13P",
+      "sellerId": "4",
+      "img": "img/product/product-5.jpg",
+      "img_hover": "img/product/product5.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 90,
+      "status": "approved"
+    },
+    {
+      "id": "25P",
+      "name": "Huwaei Air Pods",
+      "price": 360,
+      "description": "airpods huwaei for url test",
+      "sellerId": "AliPaPa",
+      "img": "https://m.media-amazon.com/images/I/51GKzabMLrL._AC_SX522_.jpg",
+      "img_hover": "https://m.media-amazon.com/images/I/41vPLT8lasL._AC_SX522_.jpg",
+      "status": "pending",
+      "createdAt": "2025-01-16T14:41:16.657Z",
+      "old_price": 400
+    }
+  ],
+  "orders": [
+    {
+      "id": "1O",
+      "sellerId": "2",
+      "customer": "Ahmed.elsaid",
+      "productId": "1P",
+      "totalAmount": 1200,
+      "status": "shipped"
+    },
+    {
+      "id": "2O",
+      "sellerId": "2",
+      "customer": "Ahmed.elsaid",
+      "productId": "2P",
+      "totalAmount": 800,
+      "status": "pending"
+    },
+    {
+      "id": "3O",
+      "sellerId": "2",
+      "customer": "Ahmed.elsaid",
+      "productId": "4P",
+      "totalAmount": 150,
+      "status": "shipped"
+    },
+    {
+      "id": "4O",
+      "sellerId": "2",
+      "customer": "Ahmed.elsaid",
+      "productId": "3P",
+      "totalAmount": 500,
+      "status": "pending"
+    },
+    {
+      "id": "5O",
+      "productId": "4P",
+      "sellerId": "2",
+      "customer": "Abdallah.Hassan",
+      "totalAmount": 99.99,
+      "status": "pending",
+      "orderDate": "2025-01-15T10:00:00Z"
+    },
+    {
+      "id": "2P",
+      "sellerId": "2",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "description": "Powerful laptop for professionals",
+      "price": 100,
+      "old_price": 120,
+      "categoryId": "sub2",
+      "stock": 30,
+      "img": "img/product/product2.jpg",
+      "img_hover": "img/product/product-2.jpg",
+      "status": "approved",
+      "ratings": {
+        "average": 4.8,
+        "count": 15
+      },
+      "customer": "JohnDoe"
+    },
+    {
+      "id": "25P",
+      "name": "Huwaei Air Pods",
+      "price": 360,
+      "description": "airpods huwaei for url test",
+      "sellerId": "AliPaPa",
+      "img": "https://m.media-amazon.com/images/I/51GKzabMLrL._AC_SX522_.jpg",
+      "img_hover": "https://m.media-amazon.com/images/I/41vPLT8lasL._AC_SX522_.jpg",
+      "status": "pending",
+      "createdAt": "2025-01-16T14:41:16.657Z",
+      "old_price": 400,
+      "customer": "JohnDoe"
+    },
+    {
+      "id": "2P",
+      "sellerId": "2",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "description": "Powerful laptop for professionals",
+      "price": 100,
+      "old_price": 120,
+      "categoryId": "sub2",
+      "stock": 30,
+      "img": "img/product/product2.jpg",
+      "img_hover": "img/product/product-2.jpg",
+      "status": "approved",
+      "ratings": {
+        "average": 4.8,
+        "count": 15
+      },
+      "customer": "JohnDoe"
+    },
+    {
+      "id": "25P",
+      "name": "Huwaei Air Pods",
+      "price": 360,
+      "description": "airpods huwaei for url test",
+      "sellerId": "AliPaPa",
+      "img": "https://m.media-amazon.com/images/I/51GKzabMLrL._AC_SX522_.jpg",
+      "img_hover": "https://m.media-amazon.com/images/I/41vPLT8lasL._AC_SX522_.jpg",
+      "status": "pending",
+      "createdAt": "2025-01-16T14:41:16.657Z",
+      "old_price": 400,
+      "customer": "JohnDoe"
+    },
+    {
+      "id": "2P",
+      "sellerId": "2",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "description": "Powerful laptop for professionals",
+      "price": 100,
+      "old_price": 120,
+      "categoryId": "sub2",
+      "stock": 30,
+      "img": "img/product/product2.jpg",
+      "img_hover": "img/product/product-2.jpg",
+      "status": "approved",
+      "ratings": {
+        "average": 4.8,
+        "count": 15
+      },
+      "customer": "JohnDoe"
+    },
+    {
+      "id": "25P",
+      "name": "Huwaei Air Pods",
+      "price": 360,
+      "description": "airpods huwaei for url test",
+      "sellerId": "AliPaPa",
+      "img": "https://m.media-amazon.com/images/I/51GKzabMLrL._AC_SX522_.jpg",
+      "img_hover": "https://m.media-amazon.com/images/I/41vPLT8lasL._AC_SX522_.jpg",
+      "status": "pending",
+      "createdAt": "2025-01-16T14:41:16.657Z",
+      "old_price": 400,
+      "customer": "JohnDoe"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "user_id",
+      "items": [
+        {
+          "productId": "product_id",
+          "quantity": "number",
+          "addedAt": "timestamp"
+        }
+      ],
+      "id": "e8c5"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Electronics",
+      "id": "cat1",
+      "description": "",
+      "subcategories": [
+        {
+          "id": "sub1",
+          "name": "Smartphones",
+          "imageUrl": ""
+        },
+        {
+          "id": "sub2",
+          "name": "Laptops",
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "cat2",
+      "name": "Fashion",
+      "description": "Clothing and accessories",
+      "subcategories": [
+        {
+          "id": "sub3",
+          "name": "Men's Wear",
+          "imageUrl": ""
+        },
+        {
+          "id": "sub4",
+          "name": "Women's Wear",
+          "imageUrl": ""
+        }
+      ]
+    }
+  ]
+}

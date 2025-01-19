@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login_box">
+            <div class="header">
+                <img class="logo" src="../logo.jpg">
+                <h2>Sign Up</h2>
+            </div>
+            <form id="registerForm">
+                <div class="form_group">
+                    <!-- <label>user name:</label> -->
+                    <input class="username" type="text" name="username" placeholder="Enter Your User Name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form_group">
+                    <!-- <label>Email:</label> -->
+                    <input class="email" type="email" name="email" placeholder="Enter Your Email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form_group">
+                    <label>Choose Your Role</label>
+                    <select name="role" required >
+                        <option value="customer">Customer</option>
+                        <option value="seller">Seller</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <!-- <label>Create Your password:</label> -->
+                    <input class="password" type="password" name="password" placeholder="Create Your password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div class="form_group">
+                    <!-- <label>Confirm Your password:</label> -->
+                    <input class="confpassword" type="password" name="password" placeholder="Confirm Your password" required>
+                    <span class="error" id="confpasswordError"></span>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="../../javaScript/register.js"></script>
+
+</body>
+</html>
