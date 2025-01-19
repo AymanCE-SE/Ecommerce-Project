@@ -1,3 +1,5 @@
+/** @format */
+
 // Search functionality
 const searchInput = document.querySelector("#search-bar");
 const items_sale = document.getElementById("items_sale");
@@ -29,11 +31,11 @@ function close_cart() {
 
 // Icon cart selecting and open on click
 let cartIcon = document.querySelector(".icon_cart");
-cartIcon.click = open_cart
+cartIcon.onclick = open_cart;
 
 // Close by close cart icon
 let closeCart = document.querySelector(".close_cart");
-cartIcon.click = close_cart
+closeCart.onclick = close_cart;
 
 //slider
 //Declaring array of images ,it's index, intervalID, playing flag
@@ -83,22 +85,21 @@ play.addEventListener("click", playFun);
 stopp.addEventListener("click", stopFun);
 
 //add items to cart
-let allProducts = []; //from itemshome.js
+let allProducts = [];
 
 let cart_items = document.querySelector(".cart_items");
 let product_cart = [];
 
-//push the added product to cart array
-function addToCart(id, btn) {       //(btn=>this & id=> product id) at onclick event
-  const product = allProducts.find((product) => product.id === id);
-  if (product) {
-    product_cart.push(product);
-    // btn.classList.add("active");
-    // console.log(product_cart);
-  } else {
-    console.error(`Product with ID ${id} not found.`);
-  }
-  getCartItems();
+function addToCart(id, btn) {
+    const product = allProducts.find(product => product.id === id);
+    if (product) {
+        product_cart.push(product);
+        btn.classList.add("active");
+        // console.log(product_cart);
+    } else {
+        console.error(`Product with ID ${id} not found.`);
+    }
+    getCartItems(); 
 }
 
 //count the price in cart
@@ -107,32 +108,32 @@ let count_item_cart = document.querySelector(".count_item_cart");
 let price_cart_total = document.querySelector(".price_cart_total");
 let price_cart_Head = document.querySelector(".price_cart_Head");
 
-//adding the product to the cart 
+//adding the product to the cart
 function getCartItems() {
   let totalCartPrice = 0;
   let items_C = "";
   for (let i = 0; i < product_cart.length; i++) {
-    items_C = `
-        <div class="item_cart">
-            <img src="${product_cart[i].img}" alt="product">
-            <div class="content">
-                <h4>${product_cart[i].name}</h4>
-                <p class="price_cart">$${product_cart[i].price}</p>
-            </div>
-            <button class="delete_item" onclick="removeFromCart(${i})">
-                <i class="fa-regular fa-trash-can"></i>
-            </button>
-        </div>`;
-    totalCartPrice += product_cart[i].price;
+      items_C += `
+      <div class="item_cart">
+          <img src="${product_cart[i].img}" alt="product">
+          <div class="content">
+              <h4>${product_cart[i].name}</h4>
+              <p class="price_cart">$${product_cart[i].price}</p>
+          </div>
+          <button class="delete_item" onclick="removeFromCart(${i})">
+              <i class="fa-regular fa-trash-can"></i>
+          </button>
+      </div>`
+      totalCartPrice += product_cart[i].price
   }
-  cart_items.innerHTML = items_C;
+  cart_items.innerHTML = items_C; 
 
   //for header
-  price_cart_Head.textContent = "$" + totalCartPrice;
-  count_item.textContent = product_cart.length;
+  price_cart_Head.textContent = "$" + totalCartPrice
+  count_item.textContent = product_cart.length
   //for cart
-  count_item_cart.textContent = `(${product_cart.length} items in cart)`;
-  price_cart_total.textContent = "$" + totalCartPrice;
+  count_item_cart.textContent = `(${product_cart.length} items in cart)`
+  price_cart_total.textContent = "$" + totalCartPrice
 }
 
 function removeFromCart(index) {
