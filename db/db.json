@@ -193,18 +193,36 @@
       "username": "M.Abd-elhay",
       "email": "m.abdelhay@gmail.com",
       "role": "seller",
-      "status": "active",
+      "status": "deleted",
       "password": "123456",
       "createdAt": "2025-01-16T15:41:32.771Z"
     },
     {
       "id": "26ka",
-      "username": "karma",
-      "email": "karma@hotmail.com",
+      "username": "customer",
+      "email": "customer@gmail.com",
       "role": "customer",
       "status": "active",
       "password": "123456",
       "createdAt": "2025-01-16T16:32:20.003Z"
+    },
+    {
+      "id": "26cu",
+      "username": "customer",
+      "email": "customer@gmail.com",
+      "role": "customer",
+      "status": "deleted",
+      "password": "123456",
+      "createdAt": "2025-01-19T08:42:03.278Z"
+    },
+    {
+      "id": "27",
+      "username": "",
+      "email": "",
+      "role": "customer",
+      "status": "deleted",
+      "password": "123456",
+      "createdAt": "2025-01-19T09:36:46.493Z"
     }
   ],
   "products": [
@@ -359,6 +377,18 @@
       "status": "pending",
       "createdAt": "2025-01-16T14:41:16.657Z",
       "old_price": 400
+    },
+    {
+      "id": "ef08",
+      "name": "phoneaaaaa",
+      "description": "Latest laptop with advanced features",
+      "img": "https://m.media-amazon.com/images/I/51GKzabMLrL._AC_SX522_.jpg",
+      "img_hover": "https://m.media-amazon.com/images/I/41vPLT8lasL._AC_SX522_.jpg",
+      "status": "pending",
+      "sellerId": "2",
+      "price": 600,
+      "createdAt": "2025-01-19T09:49:16.606Z",
+      "old_price": 356
     }
   ],
   "orders": [

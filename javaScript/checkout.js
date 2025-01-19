@@ -31,7 +31,7 @@ function displayCartItems(cartItems) {
 let logOut = document.querySelector(".logout");
 let welcome = document.querySelector(".welcomeName");
 if(currentUser){
-    welcome.innerHTML =`welcome, ${currentUser.userName}`;
+    welcome.innerHTML =`welcome, ${currentUser.userName} !`;
     document.querySelector(".loging-signup").style.display= "none";
 }else{
     logOut.style.display= "none"
@@ -76,26 +76,31 @@ async function sendOrder(order) {
         console.error(`Error sending order ${order.id}:`, error);
     }
 }
+
+
 const savedCart = localStorage.getItem('storageCart');//text values
-const ordersArray = JSON.parse(savedCart);//array
-
-
-    let numberOfOrders = ordersArray.length;
-
+const ordersArray = JSON.parse(savedCart);  //array
 
 //initialize the orders
 document.querySelector(".checkout-btn").addEventListener('click',async ()=>{
     // const orders = {
     //     id: 
-    //     productId:
+    //     productId: order.id
     //     sellerId:
     //     customer: currentUser.userName,
     //     totalAmount:
     //     status: "pending",
     //     orderDate:  
     // }
+    //SweetAlert
+    Swal.fire({
+        title: "Your Order Done!",
+        icon: "success"
+      });
+
     sendOrder (orderData)
 })
+
 // order
 // "id": "5O",
 // "productId": "4P",
